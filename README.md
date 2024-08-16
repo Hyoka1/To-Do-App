@@ -1,1 +1,2 @@
 # To-Do-App
+In this project i have made a To do app where users can log in/ register and use the app functionalities like create, read, update and delete the tasks according to the users. I have also used Error handling and authentications for proper usage and security. Here the data that the users add are all stored in a databse. I used MongoDB compass to connect and monitor the data in the backend. The passwords are encryped using the Bcrypt functions which will secure the passwords of users.
