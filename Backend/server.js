@@ -50,7 +50,7 @@ const Task = mongoose.model('Task', taskSchema);
 app.post('/register', async (req, res) => {
   const { username, email, password } = req.body;
   try {
-      console.log('Received registration request:', username, email, password); // Debugging line
+      console.log('Received registration request:', username, email, password); 
 
       let user = await User.findOne({ username });
       if (user) {
@@ -65,7 +65,7 @@ app.post('/register', async (req, res) => {
           expiresIn: '1h',
       });
 
-      console.log('User registered successfully:', user.username); // Debugging line
+      console.log('User registered successfully:', user.username); 
 
       res.json({ token });
   } catch (err) {
